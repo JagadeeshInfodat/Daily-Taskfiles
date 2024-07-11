@@ -1,1 +1,120 @@
- Hosted into Git Hub.
+GIT:
+_______________________________________________________________________________________________
+It is an application/Software
+Distributed Version Control System
+
+Two types of Systems are there
+	1.Centralized Version Control(only one place we can only track) and
+	2.Distributed Version Control
+
+							GIT Vs GitHub:
+GIT:
+	It is a Software/Application
+	Installed on Local System
+	Used for Project Management Control in locally
+	We called it as Git Repo
+
+GIT Hub:
+	It is a website
+	Cloud Based
+	We can store Git Repos in globally,So that everyone can access
+	Used for Project Management Control globally
+
+							Installation:
+_______________________________________________________________________________________________
+Visit Git-scm.com and download git.
+--  >git -v  -To Check git version.
+
+			Creating Git Hub account:
+
+Visit GitHub.com and click on Signup
+Give email, Create Password and UserName.
+and after that Continue For free.
+
+Git Commands:
+-------------
+		>git -v  To check Git Version.
+UName:Jagadeesh17
+pwd:WelcomeGit@123
+							Configurations:
+_______________________________________________________________________________________________
+System Level Config:
+			-->git config --system --list 
+
+Global Level Config:
+			--> git config --global --list
+	Config New User and Email address:
+			--> git config --global user.name "Jagadeesh"
+			--> git config --global user.email "jagadeesh3323@gmail.com"
+				[user.name=Jagadeesh
+				user.email=jagadeesh3323@gmail.com]
+
+		
+User Level Config:
+Project Level Config:
+
+System & Global Level:
+			--> git config --list
+
+							Basic WorkFlow:
+_______________________________________________________________________________________________
+In Local Folder:
+
+[Working Directory]		[Stagging area/Index]		[Local Repositoy]  -->git push    [Cloud Repository]
+ git init & git add
+
+
+-->git clone:  Getting the project into Our Local repo
+-->git add:	adding/updating and it moves to  
+
+
+
+							Upload Project into GitHub:
+_______________________________________________________________________________________________
+
+.gitignore:
+	Here we mention ignorable files before uploading into hub(here no need to upload node files cause they are comparatively large).
+
+We can check that git username and email following folder "C:\Users\INFODAT\.gitconfig"
+S1: Create/Select a folder and mapped that Folder to that terminal
+S2: It will create a '.git' folder in that folder (it will be default hidden)
+
+
+The following are the steps that we should do every time 
+1.We should initialize it by giving command   --git init for converting Local Folder into "Repository".
+2.Make the files present in folder move to Stagging using command --git add filename/filename1,filename2/ ./
+3.Create a version of folder using command --git command -m "<optional Message>"
+4.After this we have to push our local repo to Git hub by linked to GitHub Repo.(We should have to create a repo in GitHub).
+5.-- git remote add origin https://github.com/Jagadeeshg17/LearningGit.git <--- this command is used to link our internal Repo to GitHub Repo i,e 'LearningGit.git'.
+6.We can find current available branches present in  local by using --git branch 
+7.Then after --git branch -M main(-M is used to modify the existing name to 'main')&git push -u origin main, It is optional, we can directly give --git branch and git push -u origin master(here master is the predefined name.)
+8.Everttime do the same process after any changes --> 1.Add, 2.Stagging, 3.Commting & 4.Linking to GitHub repo.
+
+Here linking process following ways:
+------------------------------------
+1.Using Authentication &
+2.Creating Token.
+
+Now login and pushing the code using  Access-Token:
+	1.Open Git Hub and click on our profile and select 'Settings'
+	2.Select Developer Settings,and click on Personal access tokens
+	3.Select Token(classic) and click on "Generate new token" dropdown and select "Generate new token classic".
+	4.Configure as per our standards and we will get the token, like the following 'hjklhjljhlhjklhljhl'
+	5.This token stores in ourlocal storage in Windows "Credential Manager".
+
+Cloning Project:
+----------------
+Why clone: Used to get the code from cloud.
+It can be done using 3 ways:
+	1.HTTPS   --> It is in the form of Url
+ 		To achieve this create a new folder and map the cmd to that folder and give the command from GitHub "https://github.com/codewithsadee/fasteat.git" and it will doownload the files present in the repo, here we can also 		directly download Zip file.
+	2.SSH &
+	3.GitHub CLI
+
+
+
+							Key Points:
+_______________________________________________________________________________________________
+Every command in git starts with keyword "git".
+We can check that git username and email following folder "C:\Users\INFODAT\.gitconfig"
+Exist form git log, press 'Q'
