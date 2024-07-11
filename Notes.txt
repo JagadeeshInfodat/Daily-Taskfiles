@@ -111,6 +111,10 @@ It can be done using 3 ways:
 	2.SSH &
 	3.GitHub CLI
 
+Remove file from Repo:
+----------------------
+git rm file.txt
+
 
 
 							Key Points:
@@ -118,3 +122,5 @@ ________________________________________________________________________________
 Every command in git starts with keyword "git".
 We can check that git username and email following folder "C:\Users\INFODAT\.gitconfig"
 Exist form git log, press 'Q'
+
+
