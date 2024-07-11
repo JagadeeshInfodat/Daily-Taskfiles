@@ -115,6 +115,10 @@ Remove file from Repo:
 ----------------------
 git rm file.txt
 
+Pushing & Pulling:
+-----------------
+git pull <-- used to get all the changes/files into local Repository.
+git push origin master  <-- used to push our local repo code to Remote Repo.
 
 
 							Key Points:
