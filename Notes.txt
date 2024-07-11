@@ -138,6 +138,7 @@ How:
                                    --->/node module (prefix slash for main folder.)
 
 Create a .gitgnore file.
+Check the status.(It should show its name in prompt)
 after that we hve to give that file name with extension in .gitgnore file.
 ex: *.txt
     file.txt
