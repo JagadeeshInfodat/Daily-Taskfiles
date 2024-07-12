@@ -120,33 +120,51 @@ Pushing & Pulling with in the same repo from Remote to local and viseversa:
 git pull <-- used to get all the changes/files into local Repository.
 git push origin master  <-- used to push our local repo code to Remote Repo.
 
+
 Gitignore file:
 ----------
-It wont track by git.
-It doesnot add to RemoteRepo.
+                It wont track by git.
+                It doesnot add to RemoteRepo.
 
-The following are the files that are not required:
-.Log file
-.apikeys/credential files
-Libraries/dependencies --> ex:node modules
-.editorConfig
+                The following are the files that are not required:
+                .Log file
+                .apikeys/credential files
+                Libraries/dependencies --> ex:node modules
+                .editorConfig
 
-How:
-   For a particular file to ignore ---> filename.txt
-   For a set of extension files    ---> *.txt or *.mp4 etc.
-   For a specific folder           ---> temp/ (this is folders inside temp folder to simply ignore nested files )
-                                   --->/node module (prefix slash for main folder.)
+                How:
+                For a particular file to ignore ---> filename.txt
+                For a set of extension files    ---> *.txt or *.mp4 etc.
+                For a specific folder           ---> temp/ (this is folders inside temp folder to simply ignore nested files )
+                                                --->/node module (prefix slash for main folder.)
 
-Create a .gitgnore file.
-Check the status.(It should show its name in prompt)
-after that we hve to give that file name with extension in .gitgnore file.
-ex: *.txt
-    file.txt
-    !test.txt  <-- this is for except this file ignore all the files with .txt extension.
+                Create a .gitgnore file.
+                Check the status.(It should show its name in prompt)
+                after that we hve to give that file name with extension in .gitgnore file.
+                ex: *.txt
+                    file.txt
+                    !test.txt  <-- this is for except this file ignore all the files with .txt extension.
 
-Comment :
--------
-        #textcongif.txt  <-- To comment a file.
+                Comment :
+                -------
+                        #textcongif.txt  <-- To comment a file.
+
+readme.md file:
+--------------
+.md means --> MarkDown.
+It tells about overview of our repo.
+It is similar to HTML.
+Here # indicates heading,
+        # is main heading,
+        ## is second heading
+        - indicates ==> .
+        Italic --> *text* or _text_
+        Bold   --> **text** or __text__
+
+
+
+
+
 
 
 
