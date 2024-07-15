@@ -30,8 +30,8 @@ for image we should use
 -----
 For CheckBox:
 
--[] Qualified.    
--[x] Pass  
+- [ ] Qualified.    
+- [x] Pass  
 
 
 Tables:
