@@ -174,11 +174,50 @@ ex:Git Checkout c7485129
 
 
 
+Git Revert& Git Reset:
+_______________________________________________________________________________________________
+Revert:
+		commit 02b48261e87d100ce76080bf24eba67389b4df94 (HEAD, jagadeesh)
+		Here -->Head means recent commit.
+			-->Head~1 means  just next commit before 'Head'.
+			-->git revert commit Id
+			-->git revert Head
+			-->git revert Head~1
+			-->git revert commit id --no-edit (Used to automatically takes default committed message.So that it wont ask any message to commit)
+		we can give multiple commit id with spaces.
+
+Reset:
+ Used to reset the Head pointer to any other  commit id.Then it will delete above commit history from after id's 
+
+		-->git reset commit id. (mixed reset)
+		-->git reset Head~number
+		-->git reset --soft commit id.(After this commit history will delete and these changes moves to Staging but code will retains same,Here we can have files present in our Repo.)
+		-->git reset --hard commit id.(After this commit history will delete and delete everything in the repo )
+
+
+
+Git Branches:
+_______________________________________________________________________________________________
+Used to work multiple emps work at a time without disturbing main/master Code.
+To check branch	
+	-->git branch
+	-->git branch <branch_name>  (Used to create a new branch.)
+	-->git checkout <branch_name> (Used to switch the working directory to particular branch.)
+	-->git checkout -b <branch_name>(Used to create a new branch and move that code to that particular branch.)
+	-->git merge <branch_name> Used to merge a branch with another branch.
+	-->git branch -d <branch_name> Used to delete the branch after the merge process.
+
+---->This is in Jagadeesh Branch.....
+
+
+
+
+--currently im switched to TestOne branch.
 							Key Points:
 _______________________________________________________________________________________________
 Every command in git starts with keyword "git".
 We can check that git username and email following folder "C:\Users\INFODAT\.gitconfig"
 Exist form git log, press 'Q'
+After checkout to any previous version we should Save the 'Commit Id' to switch back to previous version.
 
-
- 
+  
