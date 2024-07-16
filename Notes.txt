@@ -201,6 +201,7 @@ ________________________________________________________________________________
 Used to work multiple emps work at a time without disturbing main/master Code.
 To check branch	
 	-->git branch
+	-->git branch-a (to get all the branches present in Repo.)
 	-->git branch <branch_name>  (Used to create a new branch.)
 	-->git checkout <branch_name> (Used to switch the working directory to particular branch.)
 	-->git checkout -b <branch_name>(Used to create a new branch and move that code to that particular branch.)
@@ -235,6 +236,11 @@ a7585 (master) CommitName  <-- It indicates that (master) is the base commit to 
 
 
 
+Git Fork:
+_______________________________________________________________________________________________
+Used to Copying a remote Repo to our Account.
+
+Contribute to open Source.
 
 
 
