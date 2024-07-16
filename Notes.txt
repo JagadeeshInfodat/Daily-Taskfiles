@@ -251,4 +251,3 @@ We can check that git username and email following folder "C:\Users\INFODAT\.git
 Exist form git log, press 'Q'
 After checkout to any previous version we should Save the 'Commit Id' to switch back to previous version.
 
-  
