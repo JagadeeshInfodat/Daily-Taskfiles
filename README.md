@@ -40,10 +40,9 @@ Tables:
 By default in table values are 'Left aligned' & for col border we should give min '3-' and use | for columns.
 
 |Id |Name| Pwd|
-|---|---|---|
-
-|101|Kumar|1234|
-|102|Kumari|1234|
+|----|----|----|
+| 101| Kumar | 1234 |
+| 102|Kumari|1234|
 |103|Varun Kumar|1234|
 
 
