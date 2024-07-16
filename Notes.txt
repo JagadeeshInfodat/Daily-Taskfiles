@@ -213,6 +213,31 @@ To check branch
 
 
 --currently im switched to TestOne branch.
+
+Merge Conflicts:
+_______________________________________________________________________________________________
+Inline code: Having the changes in the same line of code.
+File Level:
+			 i.Modified the file names/rename files
+			 ii.Deleting the files.
+
+
+Git Rebase:
+_______________________________________________________________________________________________
+ C3:(Common commit is also known as Base/Base Commit)
+
+Rebase is nothing but modifying the Base commit from 'C3' to 'C4'.
+Then 'dev' branch is started from C4.
+a7585 (master) CommitName  <-- It indicates that (master) is the base commit to another branch.
+
+	-->git rebase master 
+	-->git rebase --continue (used this after the conflicts.)
+
+
+
+
+
+
 							Key Points:
 _______________________________________________________________________________________________
 Every command in git starts with keyword "git".
