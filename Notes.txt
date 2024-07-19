@@ -201,11 +201,35 @@ ________________________________________________________________________________
 Used to work multiple emps work at a time without disturbing main/master Code.
 To check branch	
 	-->git branch
+	-->git branch-a (to get all the branches present in Repo.)
 	-->git branch <branch_name>  (Used to create a new branch.)
 	-->git checkout <branch_name> (Used to switch the working directory to particular branch.)
 	-->git checkout -b <branch_name>(Used to create a new branch and move that code to that particular branch.)
 	-->git merge <branch_name> Used to merge a branch with another branch.
 	-->git branch -d <branch_name> Used to delete the branch after the merge process.
+
+
+
+Git Stash:
+_______________________________________________________________________________________________
+By using Stash we can store the changes temporarily/save Uncommitted changes.
+It is useful to switch to another branch without commit.
+These changes are stored in stash stack with index values .
+Only tracked files it considers(git add .).
+-->git stash
+-->git stash save "New login page"(This is for user defined Comment to tht stash)
+-->git stash -u (Used to stash the untracked files.So that we can also save files including)
+-->git stash list (Used to check list)
+--> git stash apply (Used to apply save changes)
+-->git stash pop (Used to apply top most changes to present branch and they will delete from stash)(Pop & delete)
+-->git stash pop 'stash@{1}'(Use this when we have multiple indexes) if not git stash pop 
+-->git stash drop (Used to drop the top most Stash) 
+-->git stash drop 'stash@{1}'(Used to drop the index of {1}stash from list.) 
+-->git stash clear (Used to clear all the stashes.)
+We can roll back them in any of the branch we want.
+
+
+
 
 ---->This is in Jagadeesh Branch.....
 
@@ -213,6 +237,36 @@ To check branch
 
 
 --currently im switched to TestOne branch.
+
+Merge Conflicts:
+_______________________________________________________________________________________________
+Inline code: Having the changes in the same line of code.
+File Level:
+			 i.Modified the file names/rename files
+			 ii.Deleting the files.
+
+
+Git Rebase:
+_______________________________________________________________________________________________
+ C3:(Common commit is also known as Base/Base Commit)
+
+Rebase is nothing but modifying the Base commit from 'C3' to 'C4'.
+Then 'dev' branch is started from C4.
+a7585 (master) CommitName  <-- It indicates that (master) is the base commit to another branch.
+
+	-->git rebase master 
+	-->git rebase --continue (used this after the conflicts.)
+
+
+
+Git Fork:
+_______________________________________________________________________________________________
+Used to Copying a remote Repo to our Account.
+
+Contribute to open Source.
+
+
+
 							Key Points:
 _______________________________________________________________________________________________
 Every command in git starts with keyword "git".
@@ -220,4 +274,3 @@ We can check that git username and email following folder "C:\Users\INFODAT\.git
 Exist form git log, press 'Q'
 After checkout to any previous version we should Save the 'Commit Id' to switch back to previous version.
 
-  
