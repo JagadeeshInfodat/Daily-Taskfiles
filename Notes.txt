@@ -206,7 +206,8 @@ To check branch
 	-->git checkout <branch_name> (Used to switch the working directory to particular branch.)
 	-->git checkout -b <branch_name>(Used to create a new branch and move that code to that particular branch.)
 	-->git merge <branch_name> Used to merge a branch with another branch.
-	-->git branch -d <branch_name> Used to delete the branch after the merge process.
+	-->git branch -d <branch_name> Used to Delete the branch after the merge process in locally.
+	-->git push origin --delete remoteBranchName 
 
 
 
@@ -227,6 +228,14 @@ Only tracked files it considers(git add .).
 -->git stash drop 'stash@{1}'(Used to drop the index of {1}stash from list.) 
 -->git stash clear (Used to clear all the stashes.)
 We can roll back them in any of the branch we want.
+
+Git Cherry-Pick:
+_______________________________________________________________________________________________
+	It is used to select and apply any specific commits from one branch to another branch
+
+
+
+
 
 
 
@@ -255,7 +264,7 @@ Then 'dev' branch is started from C4.
 a7585 (master) CommitName  <-- It indicates that (master) is the base commit to another branch.
 
 	-->git rebase master 
-	-->git rebase --continue (used this after the conflicts.)
+	-->git rebase --continue (use this after the conflicts.)
 
 
 
