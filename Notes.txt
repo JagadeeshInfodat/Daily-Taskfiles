@@ -208,7 +208,7 @@ To check branch
 	-->git merge <branch_name> Used to merge a branch with another branch.
 	-->git branch -d <branch_name> Used to Delete the branch after the merge process in locally.
 	-->git push origin --delete remoteBranchName 
-
+	-->git branch -v -a (Used to check all the branches present in that git)
 
 
 Git Stash:
@@ -241,7 +241,7 @@ ________________________________________________________________________________
 
 
 ---->This is in Jagadeesh Branch.....
-
+-->This is local db
 
 
 
