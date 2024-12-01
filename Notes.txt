@@ -90,6 +90,9 @@ The following are the steps that we should do every time
 7.Then after --git branch -M main(-M is used to modify the existing name to 'main')&git push -u origin main, It is optional, we can directly give --git branch and git push -u origin master(here master is the predefined name.)
 8.Everttime do the same process after any changes --> 1.Add, 2.Stagging, 3.Commting & 4.Linking to GitHub repo.
 
+Check Status: git status
+Commit: git commit -m '<Commit Message>'
+
 Here linking process following ways:
 ------------------------------------
 1.Using Authentication &
